@@ -1,0 +1,96 @@
+body {
+  background-color: #171d23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: #998235;
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.body {
+  margin: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.container * {
+  background: var(--b, #998235);
+  padding: var(--p, 0);
+  position: absolute;
+  margin: var(--m, 0);
+}
+
+.container i,
+.container u {
+  border-radius: 50%;
+}
+
+.container i {
+  --b: #1a4341;
+  --p: 90px 40px;
+  --m: 60px 50px;
+  overflow: hidden;
+}
+
+.container i i {
+  --b: #0b2429;
+  --m: -90px -24px;
+}
+
+.container i + i {
+  --m: 60px 270px;
+}
+
+.container i + i i {
+  --m: -90px -56px;
+}
+
+.container u {
+  --b: #1a4341;
+  --p: 90px;
+  --m: 60px 110px;
+}
+
+.container b {
+  --b: transparent;
+  --p: 50px 80px;
+  --m: 0px -80px;
+  overflow: hidden;
+}
+
+.container b u {
+  --b: #0b2429;
+  border: 10px solid#998235;
+  --p: 10px;
+  --m: -70px -50px;
+}
+
+.container b u + u {
+  --m: -70px 10px;
+}
+
+.container b u + u + u {
+  --b: transparent;
+  border: 20px solid#FFFFFF;
+  --p: 40px;
+  --m: -10px -60px;
+}
+
+.container b + b {
+  --b: #0b2429;
+  --p: 90px 20px;
+  --m: 30px -20px;
+  border-radius: 20px;
+}
